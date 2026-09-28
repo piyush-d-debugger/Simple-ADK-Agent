@@ -64,7 +64,7 @@ The workflow was tested successfully in the ADK Dev UI 2.8.0 with all three rout
 
 Input: what is fall of rome
 
-![History Routing](content\Hist.png)
+![History Routing](content/Hist.png)
 
 Events: the question is saved (State: question) → classifier returns HISTORY → route: HISTORY → history_Agent
 
@@ -72,7 +72,7 @@ Events: the question is saved (State: question) → classifier returns HISTORY �
 
 Input: explain force
 
-![Science Routing](content\Sci.png)
+![Science Routing](content/Sci.png)
 
 Events: State: question → SCIENCE → route: SCIENCE → science_Agent
 
@@ -80,14 +80,14 @@ Events: State: question → SCIENCE → route: SCIENCE → science_Agent
 
 Input: which is the largest continent in the world by area
 
-![Geography Routing](content\geog.png)
+![Geography Routing](content/geog.png)
 
 Events: State: question → GEOGRAPHY → route: GEOGRAPHY → geography_Agent
 
 
  ## Here's a Demo
 
-![Demo](content\SR.mp4)
+![Demo](content/SR.mp4)
 
 
 ## 🛠️ Technologies
