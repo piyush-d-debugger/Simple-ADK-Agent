@@ -14,27 +14,24 @@ Instead of sending every question to the same AI agent, the workflow first deter
 
 
 ## 🔄 Workflow
-                    ┌────────────────┐
-                    │     START      │
-                    └───────┬────────┘
-                            ▼
-                    ┌────────────────┐
-                    │  save_question │
-                    └───────┬────────┘
-                            ▼
-                    ┌────────────────┐
-                    │   classifier   │
-                    └───────┬────────┘
-                            ▼
-                    ┌────────────────┐
-                    │  topic_router  │
-                    └───────┬────────┘
+
+                   ┌────────────────┐
+                   │     START      │
+                   └───────┬────────┘                   
+                           │
+                           ▼
+                    save_question
+                           │
+                           ▼
+                      classifier
+                           │
+                           ▼
+                     topic_router
           ┌─────────────────┼──────────────────┐
        SCIENCE           HISTORY           GEOGRAPHY
+          │                 │                  │
           ▼                 ▼                  ▼
-   ┌──────────────┐  ┌──────────────┐  ┌────────────────┐
-   │ science_Agent│  │ history_Agent│  │ geography_Agent│
-   └──────┬───────┘  └──────┬───────┘  └───────┬────────┘
+    science_Agent     history_Agent      geography_Agent
           └─────────────────┼──────────────────┘
                             ▼
                           END
